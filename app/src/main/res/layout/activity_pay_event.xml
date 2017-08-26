@@ -14,9 +14,9 @@
         android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/event_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/event_name"
         android:gravity="center"
         android:textColor="@color/primary_text"
         android:textSize="16dp"
