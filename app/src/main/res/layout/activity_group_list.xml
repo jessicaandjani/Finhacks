@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/list_row_selector"
+    android:padding="8dp" >
+
+    <!-- Group Image -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/group_image"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/avatar_group" />
+
+    <!-- Group Name -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/group_name"
+        android:layout_gravity="center_vertical"
+        android:textSize="18sp"
+        android:textColor="@color/primary_text"
+        android:textStyle="bold" />
+
+</LinearLayout>
