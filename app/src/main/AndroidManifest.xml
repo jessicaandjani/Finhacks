@@ -32,7 +32,25 @@
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".GroupActivity" />
+        </activity>
+        <activity android:name=".AddGroupActivity" android:screenOrientation="portrait"
+            android:parentActivityName=".GroupActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AddGroupActivity" />
+        </activity>
+        <activity android:name=".EventActivity" android:screenOrientation="portrait"
+            android:parentActivityName=".GroupActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EventActivity" />
+        </activity>
+        <activity android:name=".CreateEventActivity" android:screenOrientation="portrait"
+            android:parentActivityName=".EventActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CreateEventActivity" />
         </activity>
 
     </application>

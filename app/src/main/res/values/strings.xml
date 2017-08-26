@@ -1,7 +1,11 @@
 <resources>
     <string name="app_name">Finhacks</string>
     <string name="group">Group</string>
-    <string name="register">Register Here</string>
+    <string name="contact">Contact</string>
+    <string name="event">Event</string>
+    <string name="create_event">Create Event</string>
+    <string name="register">Register</string>
+    <string name="register_link">Register Here</string>
     <string name="login">Login</string>
     <!-- Drawer Layout -->
     <string name="drawer_open">Open navigation drawer</string>
@@ -15,9 +19,17 @@
     <string name="hint_email">Email</string>
     <string name="hint_username">Username</string>
     <string name="hint_pin">PIN (6 digit)</string>
+    <string name="hint_event_name">Event Name</string>
+    <string name="hint_event_description">Event Description</string>
+    <string name="hint_event_deadline">Deadline</string>
+    <string name="hint_event_target_balance">Target Balance</string>
     <!-- Error Message -->
     <string name="err_msg_empty">This field is required</string>
     <string name="err_msg_pin">PIN must be at least 6 digits</string>
+    <string name="err_msg_balance">Balance must be at least Rp 100000</string>
+    <!-- Button -->
+    <string name="pay_button">Pay</string>
+    <string name="create_button">Create</string>
 
 
 </resources>
