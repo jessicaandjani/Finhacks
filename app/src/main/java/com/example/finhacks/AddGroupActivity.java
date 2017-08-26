@@ -1,5 +1,6 @@
 package com.example.finhacks;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -10,7 +11,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AbsListView;
+import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -78,8 +81,18 @@ public class AddGroupActivity extends AppCompatActivity {
         addMember.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intentCreateGroup = new Intent(AddGroupActivity.this, CreateGroupActivity.this);
-//                startActivity(intentCreateGroup);
+                //Dialog
+                final Dialog dialog = new Dialog(AddGroupActivity.this);
+                dialog.setContentView(R.layout.activity_create_group);
+
+                Button dialogButton = (Button) dialog.findViewById(R.id.create_btn);
+                dialogButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        dialog.dismiss();
+                    }
+                });
+                dialog.show();
             }
         });
     }

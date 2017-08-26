@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
                 switch (position) {
                     case 0:
-                        Intent intentContact = new Intent(MainActivity.this, LoginActivity.class);
+                        Intent intentContact = new Intent(MainActivity.this, ContactActivity.class);
                         startActivity(intentContact);
                         break;
                     case 1:
